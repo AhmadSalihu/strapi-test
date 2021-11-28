@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/idea-next-registers",
+      "handler": "idea-next-register.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/idea-next-registers/count",
+      "handler": "idea-next-register.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/idea-next-registers/:id",
+      "handler": "idea-next-register.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/idea-next-registers",
+      "handler": "idea-next-register.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/idea-next-registers/:id",
+      "handler": "idea-next-register.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/idea-next-registers/:id",
+      "handler": "idea-next-register.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

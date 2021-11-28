@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/idea-next-hosts",
+      "handler": "idea-next-host.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/idea-next-hosts/count",
+      "handler": "idea-next-host.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/idea-next-hosts/:id",
+      "handler": "idea-next-host.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/idea-next-hosts",
+      "handler": "idea-next-host.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/idea-next-hosts/:id",
+      "handler": "idea-next-host.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/idea-next-hosts/:id",
+      "handler": "idea-next-host.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

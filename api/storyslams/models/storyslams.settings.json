@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "storyslams",
+  "info": {
+    "name": "Storyslams"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "First_Name": {
+      "type": "text"
+    },
+    "Last_Name": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Password": {
+      "type": "password",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    },
+    "Select_Country": {
+      "type": "enumeration",
+      "enum": [
+        "Nigeria",
+        "Ghana",
+        "Kenya",
+        "South_Africa"
+      ]
+    },
+    "Have_you_participate_in_story_slams": {
+      "type": "boolean"
+    },
+    "upload_passport": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

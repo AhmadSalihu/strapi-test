@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "story_slams_applications",
+  "info": {
+    "name": "Story_Slams_Application"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "memoable_experience": {
+      "type": "richtext"
+    }
+  }
+}

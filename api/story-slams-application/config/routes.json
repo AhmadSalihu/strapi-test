@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/story-slams-applications",
+      "handler": "story-slams-application.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/story-slams-applications/count",
+      "handler": "story-slams-application.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/story-slams-applications/:id",
+      "handler": "story-slams-application.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/story-slams-applications",
+      "handler": "story-slams-application.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/story-slams-applications/:id",
+      "handler": "story-slams-application.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/story-slams-applications/:id",
+      "handler": "story-slams-application.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "idea_next_registers",
+  "info": {
+    "name": "Idea Next Register",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Password": {
+      "type": "password"
+    },
+    "ConfirmedPassword": {
+      "type": "password"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Institution": {
+      "type": "string"
+    },
+    "Department": {
+      "type": "string"
+    },
+    "Dept_unit_org": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "enumeration",
+      "enum": [
+        "Nigeria",
+        "Ghana"
+      ]
+    },
+    "website": {
+      "type": "text"
+    },
+    "Status": {
+      "type": "string",
+      "required": true,
+      "regex": "Student",
+      "default": "Staff"
+    },
+    "STatus": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/storyslams",
+      "handler": "storyslams.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/storyslams/count",
+      "handler": "storyslams.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/storyslams/:id",
+      "handler": "storyslams.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/storyslams",
+      "handler": "storyslams.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/storyslams/:id",
+      "handler": "storyslams.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/storyslams/:id",
+      "handler": "storyslams.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

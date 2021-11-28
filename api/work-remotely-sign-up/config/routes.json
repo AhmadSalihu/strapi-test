@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/work-remotely-sign-ups",
+      "handler": "work-remotely-sign-up.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/work-remotely-sign-ups/count",
+      "handler": "work-remotely-sign-up.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/work-remotely-sign-ups/:id",
+      "handler": "work-remotely-sign-up.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/work-remotely-sign-ups",
+      "handler": "work-remotely-sign-up.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/work-remotely-sign-ups/:id",
+      "handler": "work-remotely-sign-up.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/work-remotely-sign-ups/:id",
+      "handler": "work-remotely-sign-up.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "idea_next_hosts",
+  "info": {
+    "name": "IdeaNextHost"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Brief_Innovation_Desc": {
+      "type": "text"
+    },
+    "Innovation_Impact": {
+      "type": "text"
+    },
+    "Innovation_Transformation": {
+      "type": "richtext"
+    },
+    "Supporting_Document": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    }
+  }
+}

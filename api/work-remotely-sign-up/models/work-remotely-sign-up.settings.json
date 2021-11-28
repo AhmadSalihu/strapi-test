@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "work_remotely_sign_ups",
+  "info": {
+    "name": "Work Remotely Sign Up",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "file": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "Choose_Status": {
+      "type": "enumeration",
+      "enum": [
+        "Developer",
+        "Content_Creator",
+        "Designer",
+        "Smart_Agriculture_Expert",
+        "Engineering_Networking_Expert"
+      ]
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Password": {
+      "type": "password",
+      "required": true,
+      "minLength": 6
+    }
+  }
+}
